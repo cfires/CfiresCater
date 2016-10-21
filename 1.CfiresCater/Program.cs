@@ -16,7 +16,11 @@ namespace CfiresCater
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            FrmLogin fl = new FrmLogin();
+            if (fl.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FrmMain());
+            }
         }
     }
 }
