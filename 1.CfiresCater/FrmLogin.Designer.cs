@@ -28,30 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPwd = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.msgDiv1 = new MsgDiv();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(196, 69);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 30);
-            this.textBox1.TabIndex = 0;
+            this.txtName.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtName.Location = new System.Drawing.Point(196, 69);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtName.Size = new System.Drawing.Size(170, 30);
+            this.txtName.TabIndex = 0;
             // 
-            // textBox2
+            // txtPwd
             // 
-            this.textBox2.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox2.Location = new System.Drawing.Point(196, 106);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(170, 30);
-            this.textBox2.TabIndex = 1;
+            this.txtPwd.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtPwd.Location = new System.Drawing.Point(196, 106);
+            this.txtPwd.Multiline = true;
+            this.txtPwd.Name = "txtPwd";
+            this.txtPwd.Size = new System.Drawing.Size(170, 30);
+            this.txtPwd.TabIndex = 1;
             // 
             // btnLogin
             // 
@@ -74,6 +77,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // msgDiv1
+            // 
+            this.msgDiv1.AutoSize = true;
+            this.msgDiv1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.msgDiv1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.msgDiv1.Font = new System.Drawing.Font("宋体", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.msgDiv1.ForeColor = System.Drawing.Color.Red;
+            this.msgDiv1.Location = new System.Drawing.Point(95, 155);
+            this.msgDiv1.MaximumSize = new System.Drawing.Size(980, 525);
+            this.msgDiv1.Name = "msgDiv1";
+            this.msgDiv1.Padding = new System.Windows.Forms.Padding(7);
+            this.msgDiv1.Size = new System.Drawing.Size(86, 31);
+            this.msgDiv1.TabIndex = 1;
+            this.msgDiv1.Text = "msgDiv1";
+            this.msgDiv1.Visible = false;
+            // 
             // FrmLogin
             // 
             this.AcceptButton = this.btnLogin;
@@ -83,10 +102,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(392, 261);
+            this.Controls.Add(this.msgDiv1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPwd);
+            this.Controls.Add(this.txtName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -101,9 +121,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClose;
+        private MsgDiv msgDiv1;
     }
 }

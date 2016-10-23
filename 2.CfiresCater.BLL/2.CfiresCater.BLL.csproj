@@ -41,11 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfoBLL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\3.CfiresCater.DAL\3.CfiresCater.DAL.csproj">
       <Project>{539e3d06-6aa6-44f9-983c-948d6777add7}</Project>
       <Name>3.CfiresCater.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\4.CfiresCater.Model\4.CfiresCater.Model.csproj">
+      <Project>{a6822de1-79c2-44e1-83e7-9be8f9539d92}</Project>
+      <Name>4.CfiresCater.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
