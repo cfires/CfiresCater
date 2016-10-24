@@ -43,7 +43,7 @@
             this.txtName.Location = new System.Drawing.Point(196, 69);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtName.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtName.Size = new System.Drawing.Size(170, 30);
             this.txtName.TabIndex = 0;
             // 
