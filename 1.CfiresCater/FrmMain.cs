@@ -16,5 +16,10 @@ namespace CfiresCater
         {
             InitializeComponent();
         }
+
+        private void 餐饮管理系统_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
